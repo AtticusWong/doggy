@@ -8,7 +8,7 @@ pub fn configure() -> Command {
 pub fn handle(matches: &ArgMatches, _settings: &Settings) -> anyhow::Result<()> {
     if let Some(_matches) = matches.subcommand_matches("hello") {
         println!("Hello World!");
-    }
+}
 
     Ok(())
 }
