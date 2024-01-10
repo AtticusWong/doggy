@@ -7,6 +7,7 @@ use crate::state::ApplicationState;
 mod handlers;
 mod request;
 mod response;
+mod middleware;
 mod v1;
 
 pub fn configure(state:Arc<ApplicationState>) -> Router {

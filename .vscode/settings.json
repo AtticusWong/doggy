@@ -1,0 +1,6 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./shelter_main/Cargo.toml",
+        "./shelter_main/Cargo.toml"
+    ]
+}
