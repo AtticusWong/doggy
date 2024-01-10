@@ -32,11 +32,11 @@ pub fn main() -> anyhow::Result<()> {
 
     let settings = settings::Settings::new(config_location, "SHELTER")?;
 
-    let subscriber = Registry::default()
-        .with(LevelFilter::from_level(Level::DEBUG))
-        .with(tracing_subscriber::fmt::Layer::default().with_writer(std::io::stdout));
+    // let subscriber = Registry::default()
+    //     .with(LevelFilter::from_level(Level::DEBUG))
+    //     .with(tracing_subscriber::fmt::Layer::default().with_writer(std::io::stdout));
 
-    tracing::subscriber::set_global_default(subscriber).expect("Failed to set subscriber");
+    // tracing::subscriber::set_global_default(subscriber).expect("Failed to set subscriber");
 
     commands::handle(&matches, &settings)?;
 
